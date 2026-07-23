@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cryptopay/database": ["packages/database/src"],
+      "@cryptopay/blockchain": ["packages/blockchain/src"],
+      "@cryptopay/wallet": ["packages/wallet/src"],
+      "@cryptopay/pricing": ["packages/pricing/src"],
+      "@cryptopay/payments": ["packages/payments/src"],
+      "@cryptopay/pix": ["packages/pix/src"],
+      "@cryptopay/kyc": ["packages/kyc/src"],
+      "@cryptopay/config": ["packages/config/src"],
+      "@cryptopay/types": ["packages/types/src"],
+      "@cryptopay/ui": ["packages/ui/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", ".next", "build"]
+}
